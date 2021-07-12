@@ -1,3 +1,5 @@
 # stepik_qa
+Course stepik  https://stepik.org/course/575/syllabus
 
-проверить версию хрома  - chrome://version/
+-----------------------------------------
+check Chrome version  - chrome://version/
