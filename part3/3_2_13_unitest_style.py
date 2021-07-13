@@ -2,13 +2,14 @@ from selenium import webdriver
 import time
 import unittest
 
-browser = webdriver.Chrome("C:\Projects\stepik_qa\driver\chromedriver.exe")
+
 
 
 class TestAbs(unittest.TestCase):
 
     def test_successful_registration(self):
         link = "http://suninjuly.github.io/registration1.html"
+        browser = webdriver.Chrome("C:\\Projects\\stepik_qa\\driver\\chromedriver.exe")
         browser.get(link)
 
         input_first_name = browser.find_element_by_tag_name('[placeholder="Input your first name"]')
@@ -29,9 +30,10 @@ class TestAbs(unittest.TestCase):
 
     def test_unsuccessful_registration(self):
         link = "http://suninjuly.github.io/registration2.html"
+        browser = webdriver.Chrome("C:\\Projects\\stepik_qa\\driver\\chromedriver.exe")
         browser.get(link)
 
-        input_first_name = browser.find_element_by_tag_name('[placeholder="Input your first name"]')
+        input_first_name = browser.find_element_by_tag_name('[placeholder="Input your name"]')
         input_first_name.send_keys("Ivan")
         input_last_name = browser.find_element_by_tag_name('[placeholder="Input your last name"]')
         input_last_name.send_keys("Petrov")
