@@ -3,8 +3,8 @@ import time
 
 try:
     link = "http://suninjuly.github.io/registration2.html"
-    link = "http://suninjuly.github.io/registration1.html"
-    browser = webdriver.Chrome("C:\Projects\stepik_qa\driver\chromedriver.exe")
+    #link = "http://suninjuly.github.io/registration1.html"
+    browser = webdriver.Chrome("/driver/chromedriver.exe")
     browser.get(link)
 
     # Ваш код, который заполняет обязательные поля

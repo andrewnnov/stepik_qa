@@ -4,7 +4,7 @@ import time
 
 
 try:
-    browser = webdriver.Chrome("C:\Projects\stepik_qa\driver\chromedriver.exe")
+    browser = webdriver.Chrome("/driver/chromedriver.exe")
     # подготовка для теста
     # открываем страницу первого товара
     # данный сайт не существует, этот код приведен только для примера

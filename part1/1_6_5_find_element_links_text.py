@@ -1,11 +1,16 @@
 from selenium import webdriver
 import time
+import math
 
-link = "http://suninjuly.github.io/simple_form_find_task.html"
+link = "http://suninjuly.github.io/find_link_text"
 
 try:
-    browser = webdriver.Chrome("C:\Projects\stepik_qa\driver\chromedriver.exe")
+    browser = webdriver.Chrome("/driver/chromedriver.exe")
     browser.get(link)
+
+    link_element = browser.find_element_by_partial_link_text(str(math.ceil(math.pow(math.pi, math.e)*10000)))
+    link_element.click()
+    time.sleep(1)
 
     input1 = browser.find_element_by_tag_name("input")
     input1.send_keys("Ivan")

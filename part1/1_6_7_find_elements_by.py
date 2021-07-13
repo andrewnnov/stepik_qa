@@ -4,7 +4,7 @@ import time
 link = "http://suninjuly.github.io/huge_form.html"
 
 try:
-    browser = webdriver.Chrome("C:\Projects\stepik_qa\driver\chromedriver.exe")
+    browser = webdriver.Chrome("/driver/chromedriver.exe")
     browser.get(link)
     elements = browser.find_elements_by_tag_name("input")
     print(len(elements))
